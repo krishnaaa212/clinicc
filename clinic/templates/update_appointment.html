@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}   
+    <button types="submit">Update</button>    #built_in form #as_p=data stored as paragraph
+</form>
+{% endblock %}
