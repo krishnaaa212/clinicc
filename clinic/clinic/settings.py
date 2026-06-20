@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-rly!zw*ittv6lt@yjalj0x)!gi=@nym=ah_u6rjbs1$^+@9@1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'clinicc-w3w9.onrender.com',
+]
 
 
 # Application definition
@@ -118,4 +120,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
